@@ -13,7 +13,7 @@
             {% for c in data %}
             <li>{{ c.name + " email: " + c.email}}</li>
             <form method="POST" action="/delete">
-                <input type="hidden" name="contact_to_delete" value="{{c.name}}"/>
+                <input type="hidden" name="contact_to_delete" value="{{c.id}}"/>
                 <input type="submit" value="Delete"/></form>
             {% endfor %}
         </ol>
